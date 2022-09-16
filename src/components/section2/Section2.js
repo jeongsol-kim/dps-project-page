@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Grid from '@mui/material/Grid';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { Button } from "@mui/material";
 import { ReactCompareSlider, ReactCompareSliderImage, ReactCompareSliderHandle } from 'react-compare-slider';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -138,12 +139,12 @@ export default class Section2 extends Component{
         ]]
     }
 
-    create_button(id, text){
+    create_toggle_button(id, text){
         return (
-            <Button onClick={this.onClick} id={id}>
+            <ToggleButton value={id} onClick={this.onClick} id={id}>
                 {text}
-            </Button>
-        );
+            </ToggleButton>
+            );
     }
 
     onClick = (e) => {
@@ -163,13 +164,16 @@ export default class Section2 extends Component{
             <section className="section">
                 <div className="container is-max-desktop">
                     <h2 className="title is-2">Linear Inverse Problems</h2>
-
                     <div className="task-btns">
-                    <ButtonGroup  variant="outlined" aria-label="outlined button group">
-                    {this.create_button("super_resolution", 'Super-Resolution')}
-                    {this.create_button("inpaint", 'Inpaint')}
-                    {this.create_button("deblur", 'Deblur')}
-                    </ButtonGroup>
+                    <ToggleButtonGroup
+                        color="primary"
+                        value={task}
+                        aria-label="Platform"
+                    >
+                        {this.create_toggle_button("super_resolution", "super-resolution")}
+                        {this.create_toggle_button("inpaint", "inpaint")}
+                        {this.create_toggle_button("deblur", "deblur")}
+                    </ToggleButtonGroup>
                     </div>
 
                     {DESCRIPTIONS[task]}
