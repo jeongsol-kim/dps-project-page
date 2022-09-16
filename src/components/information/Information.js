@@ -34,7 +34,7 @@ export default class Information extends Component{
           <div className="container is-max-desktop">
               <div className="columns is-centered">
                   <div className="column has-text-centered">
-                      <h1 className="title is-1 publication-title">DPS: Diffusion Posterior Sampling for Noisy(Non-)linear Inverse Problems</h1>
+                      <h1 className="title is-1 publication-title">Diffusion Posterior Sampling for General Noisy Inverse Problems</h1>
                       <div className="is-size-5 publication-authors">
                           <AuthorBlock name="Hyungjin Chung" link="https://hj-chung.com" number="1" />
                           <AuthorBlock name="Jeongsol Kim" link="https://bispl.weebly.com/members.html" number="1" />
