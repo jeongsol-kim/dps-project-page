@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dps-project-page/static/css/main.2c77947e.css",
+    "main.js": "/dps-project-page/static/js/main.9780db1d.js",
+    "static/js/787.d44239ce.chunk.js": "/dps-project-page/static/js/787.d44239ce.chunk.js",
+    "index.html": "/dps-project-page/index.html",
+    "main.2c77947e.css.map": "/dps-project-page/static/css/main.2c77947e.css.map",
+    "main.9780db1d.js.map": "/dps-project-page/static/js/main.9780db1d.js.map",
+    "787.d44239ce.chunk.js.map": "/dps-project-page/static/js/787.d44239ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c77947e.css",
+    "static/js/main.9780db1d.js"
+  ]
+}
