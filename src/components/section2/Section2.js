@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 import Grid from '@mui/material/Grid';
-import ButtonGroup from '@mui/material/ButtonGroup';
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
-import { Button } from "@mui/material";
 import { ReactCompareSlider, ReactCompareSliderImage, ReactCompareSliderHandle } from 'react-compare-slider';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
