@@ -117,23 +117,23 @@ export default class Section2 extends Component{
     ImageGenerator(task, subtask){
         const root = process.env.PUBLIC_URL;
         return [[
-            {'first': root + '/imgs/results/'+ task + '/' + subtask + '/input/0.png',
-            'second': root + '/imgs/results/'+ task + '/' + subtask + '/recon/0.png',},
-            {'first': root + '/imgs/results/'+ task + '/' + subtask + '/input/1.png',
-            'second': root + '/imgs/results/'+ task + '/' + subtask + '/recon/1.png',},
+            {'first': root + '/imgs/results/'+ task + '/' + subtask + '/input/0.webp',
+            'second': root + '/imgs/results/'+ task + '/' + subtask + '/recon/0.webp',},
+            {'first': root + '/imgs/results/'+ task + '/' + subtask + '/input/1.webp',
+            'second': root + '/imgs/results/'+ task + '/' + subtask + '/recon/1.webp',},
             
         ],
         [
-            {'first': root + '/imgs/results/'+ task + '/' + subtask + '/input/2.png',
-            'second': root + '/imgs/results/'+ task + '/' + subtask + '/recon/2.png',},
-            {'first': root + '/imgs/results/'+ task + '/' + subtask + '/input/3.png',
-            'second': root + '/imgs/results/'+ task + '/' + subtask + '/recon/3.png',},
+            {'first': root + '/imgs/results/'+ task + '/' + subtask + '/input/2.webp',
+            'second': root + '/imgs/results/'+ task + '/' + subtask + '/recon/2.webp',},
+            {'first': root + '/imgs/results/'+ task + '/' + subtask + '/input/3.webp',
+            'second': root + '/imgs/results/'+ task + '/' + subtask + '/recon/3.webp',},
         ],
         [
-            {'first': root + '/imgs/results/'+ task + '/' + subtask + '/input/4.png',
-            'second': root + '/imgs/results/'+ task + '/' + subtask + '/recon/4.png',},
-            {'first': root + '/imgs/results/'+ task + '/' + subtask + '/input/5.png',
-            'second': root + '/imgs/results/'+ task + '/' + subtask + '/recon/5.png',}
+            {'first': root + '/imgs/results/'+ task + '/' + subtask + '/input/4.webp',
+            'second': root + '/imgs/results/'+ task + '/' + subtask + '/recon/4.webp',},
+            {'first': root + '/imgs/results/'+ task + '/' + subtask + '/input/5.webp',
+            'second': root + '/imgs/results/'+ task + '/' + subtask + '/recon/5.webp',}
         ]]
     }
 

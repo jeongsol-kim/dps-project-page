@@ -9,38 +9,38 @@ const root = process.env.PUBLIC_URL;
 
 const DeblurIMG = [
     [
-        {first: root + '/imgs/results/nonuniform_deblur/input/0.png',
-        second: root + '/imgs/results/nonuniform_deblur/recon/0.png',},
-        {first: root + '/imgs/results/nonuniform_deblur/input/1.png',
-        second: root + '/imgs/results/nonuniform_deblur/recon/1.png',},
-        {first: root + '/imgs/results/nonuniform_deblur/input/2.png',
-        second: root + '/imgs/results/nonuniform_deblur/recon/2.png',}
+        {first: root + '/imgs/results/nonuniform_deblur/input/0.webp',
+        second: root + '/imgs/results/nonuniform_deblur/recon/0.webp',},
+        {first: root + '/imgs/results/nonuniform_deblur/input/1.webp',
+        second: root + '/imgs/results/nonuniform_deblur/recon/1.webp',},
+        {first: root + '/imgs/results/nonuniform_deblur/input/2.webp',
+        second: root + '/imgs/results/nonuniform_deblur/recon/2.webp',}
     ],
     [
-        {first: root + '/imgs/results/nonuniform_deblur/input/3.png',
-        second: root + '/imgs/results/nonuniform_deblur/recon/3.png',},
-        {first: root + '/imgs/results/nonuniform_deblur/input/4.png',
-        second: root + '/imgs/results/nonuniform_deblur/recon/4.png',},
-        {first: root + '/imgs/results/nonuniform_deblur/input/5.png',
-        second: root + '/imgs/results/nonuniform_deblur/recon/5.png',}
+        {first: root + '/imgs/results/nonuniform_deblur/input/3.webp',
+        second: root + '/imgs/results/nonuniform_deblur/recon/3.webp',},
+        {first: root + '/imgs/results/nonuniform_deblur/input/4.webp',
+        second: root + '/imgs/results/nonuniform_deblur/recon/4.webp',},
+        {first: root + '/imgs/results/nonuniform_deblur/input/5.webp',
+        second: root + '/imgs/results/nonuniform_deblur/recon/5.webp',}
     ]
 ];
 
 const PhaseIMG = [[
-    {first: root + '/imgs/results/phase_retrieval/input/0.png',
-    second: root + '/imgs/results/phase_retrieval/recon/0.png',},
-    {first: root + '/imgs/results/phase_retrieval/input/1.png',
-    second: root + '/imgs/results/phase_retrieval/recon/1.png',},
-    {first: root + '/imgs/results/phase_retrieval/input/2.png',
-    second: root + '/imgs/results/phase_retrieval/recon/2.png',}
+    {first: root + '/imgs/results/phase_retrieval/input/0.webp',
+    second: root + '/imgs/results/phase_retrieval/recon/0.webp',},
+    {first: root + '/imgs/results/phase_retrieval/input/1.webp',
+    second: root + '/imgs/results/phase_retrieval/recon/1.webp',},
+    {first: root + '/imgs/results/phase_retrieval/input/2.webp',
+    second: root + '/imgs/results/phase_retrieval/recon/2.webp',}
 ],
 [
-    {first: root + '/imgs/results/phase_retrieval/input/3.png',
-    second: root + '/imgs/results/phase_retrieval/recon/3.png',},
-    {first: root + '/imgs/results/phase_retrieval/input/4.png',
-    second: root + '/imgs/results/phase_retrieval/recon/4.png',},
-    {first: root + '/imgs/results/phase_retrieval/input/5.png',
-    second: root + '/imgs/results/phase_retrieval/recon/5.png',}
+    {first: root + '/imgs/results/phase_retrieval/input/3.webp',
+    second: root + '/imgs/results/phase_retrieval/recon/3.webp',},
+    {first: root + '/imgs/results/phase_retrieval/input/4.webp',
+    second: root + '/imgs/results/phase_retrieval/recon/4.webp',},
+    {first: root + '/imgs/results/phase_retrieval/input/5.webp',
+    second: root + '/imgs/results/phase_retrieval/recon/5.webp',}
 ]];
 
 

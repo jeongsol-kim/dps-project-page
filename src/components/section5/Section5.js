@@ -19,16 +19,16 @@ function getImagePath(value, task){
         idx = 990 - (value-1) * 10
     }
     
-    const path_xt = process.env.PUBLIC_URL + "/imgs/progress/{0}/xt/x_{1}.png".format(task, idx.toString().padStart(4,"0"));
-    const path_x0 = process.env.PUBLIC_URL + "/imgs/progress/{0}/x0/x0_{1}.png".format(task, idx.toString().padStart(4,"0"));
+    const path_xt = process.env.PUBLIC_URL + "/imgs/progress/{0}/xt/x_{1}.webp".format(task, idx.toString().padStart(4,"0"));
+    const path_x0 = process.env.PUBLIC_URL + "/imgs/progress/{0}/x0/x0_{1}.webp".format(task, idx.toString().padStart(4,"0"));
     return {progress_img: path_xt, progress_x0: path_x0};
 };
 
 
 function ProgressImage (prop) {
     let task = prop.task;
-    const input_img = process.env.PUBLIC_URL + '/imgs/progress/{0}/input/input.png'.format(task);
-    const label_img = process.env.PUBLIC_URL + '/imgs/progress/{0}/label/label.png'.format(task);
+    const input_img = process.env.PUBLIC_URL + '/imgs/progress/{0}/input/input.webp'.format(task);
+    const label_img = process.env.PUBLIC_URL + '/imgs/progress/{0}/label/label.webp'.format(task);
 
     const [imgs, setImgs] = useState(
         getImagePath(0, task)
@@ -60,7 +60,7 @@ function ProgressImage (prop) {
                     <AiOutlineClockCircle />
                 </Grid>
                 <Grid item xs>
-                    <Slider step={5} onChange={(e) => {setImgs(getImagePath(e.target.value, task))}}/>
+                    <Slider step={2} onChange={(e) => {setImgs(getImagePath(e.target.value, task))}}/>
                 </Grid>
             </Grid>
         </div>
