@@ -7,7 +7,7 @@ export default class Section4 extends Component{
             <section className="section">
                 <div className="container is-max-desktop">
                 <div className="container is-max-desktop content">
-                <h2 className="title">Related Links</h2>
+                <h2 className="title is-2">Related Links</h2>
                 To be added.
                 </div>
                 </div>

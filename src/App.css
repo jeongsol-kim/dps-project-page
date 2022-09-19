@@ -252,3 +252,7 @@ code, pre {
   align-items: center;
   padding: 1.0rem 0;
 }
+
+.generate-progress {
+  justify-content: center;
+}
