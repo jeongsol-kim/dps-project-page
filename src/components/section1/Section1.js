@@ -29,16 +29,16 @@ const AbstractBlock = () => (
                 which significantly under-represents the complexity of the real world problems. 
             </p>
             <p>
-                In this work, we extend diffusion solvers to efficiently handle 
-                general noisy inverse problems via the Laplace approximation of the posterior sampling.
+                <b>In this work, we extend diffusion solvers to efficiently handle 
+                general noisy (non)linear inverse problems via the Laplace approximation of the posterior sampling. </b>
                 Interestingly, the resulting posterior sampling scheme is a blended version of the diffusion sampling 
-                with the manifold constrained gradient without any measurement consistency projection step, 
-                yielding more desirable generative path compared to the previous studies.
+                with the manifold constrained gradient without strict measurement consistency projection step, 
+                yielding more desirable generative path in noisy settings compared to the previous studies.
             </p>
             <p>
-                Our method demonstrates that diffusion models are not only capable of 
-                solving general noisy (i.e. Gaussian and Poisson measurement noise) linear inverse problems, 
-                but also noisy nonlinear inverse problems such as Fourier phase retrieval and non-uniform deblurring.            
+                Our method demonstrates that diffusion models can incorporate various measurement noise statistics such as
+                Gussian and Poisson, but also efficiently handle noisy nonlinear inverse problems 
+                such as Fourier phase retrieval and non-uniform deblurring.
             </p>
             </div>
         </div>

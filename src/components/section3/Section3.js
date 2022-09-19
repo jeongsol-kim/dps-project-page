@@ -96,8 +96,6 @@ export default class Section3 extends Component{
             <section className="section">
                 <div className="container is-max-desktop">
                     <h2 className="title is-2">Non-linear Inverse Problems</h2>
-                    <p>Some description</p>
-
                     <h2 style={{'fontSize': '1.5rem'}}>Non-uniform deblur</h2>
                     <div id='task-description' className="task-description hero is-light">
                         <p style={{ 'fontSize': '1.5rem', 'margin': '0 0' }}>
@@ -107,7 +105,7 @@ export default class Section3 extends Component{
                     </div>
                     <CarouselPanel imgs={DeblurIMG} />
 
-                    <h2 style={{'fontSize': '1.5rem'}}>Phase retrieval</h2>
+                    <h2 style={{'fontSize': '1.5rem'}}>Fourier phase retrieval</h2>
                     <div id='task-description' className="task-description hero is-light">
                         <p style={{ 'fontSize': '1.5rem', 'margin': '0 0' }}>
                             <MathJax>{"$y=|FPx|+n$"}</MathJax>

@@ -36,8 +36,8 @@ export default class Information extends Component{
                   <div className="column has-text-centered">
                       <h1 className="title is-1 publication-title">Diffusion Posterior Sampling for General Noisy Inverse Problems</h1>
                       <div className="is-size-5 publication-authors">
-                          <AuthorBlock name="Hyungjin Chung" link="https://hj-chung.com" number="1" />
-                          <AuthorBlock name="Jeongsol Kim" link="https://bispl.weebly.com/members.html" number="1" />
+                          <AuthorBlock name="Hyungjin Chung" link="https://hj-chung.com" number="*1" />
+                          <AuthorBlock name="Jeongsol Kim" link="https://bispl.weebly.com/members.html" number="*1" />
                           <AuthorBlock name="Michael T. McCann" link="https://michael-t-mccann.github.io/" number="2" />
                           <AuthorBlock name="Marc L. Klasky" link="https://scholar.google.com/citations?user=AKo06isAAAAJ&hl=en" number="1,2" />
                           <AuthorBlock name="Jong Chul Ye" link="https://bispl.weebly.com/professor.html" number="1" />
@@ -45,6 +45,8 @@ export default class Information extends Component{
                       <div className="is-size-5 publication-authors">
                           <span className="author-block"><sup>1</sup>Korea Advanced Institute of Science & Technology (KAIST),</span>
                           <span className="author-block"><sup>2</sup>Los Alamos National Laboratory (LANL)</span>
+                          <br></br>
+                          <span className="author-block-small">*Joint first authors</span>
                       </div>
                   
                       {/*Publication links*/}

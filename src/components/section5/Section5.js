@@ -25,33 +25,33 @@ function getImagePath(value, task){
 };
 
 
-function ProgressImage (task) {
+function ProgressImage (prop) {
+    let task = prop.task;
     const input_img = process.env.PUBLIC_URL + '/imgs/progress/{0}/input/input.png'.format(task);
     const label_img = process.env.PUBLIC_URL + '/imgs/progress/{0}/label/label.png'.format(task);
 
     const [imgs, setImgs] = useState(
         getImagePath(0, task)
     )
-    
+        
     return (
     <div className="generate-progress">
-                    
         <Grid container spacing={2}>
             <Grid item xs>
-                <h4>Measurement</h4>
+                <h4 className="has-text-centered">Measurement</h4>
                 <img src={input_img} alt="input image" width={256} height={256}></img>
             </Grid>
             <Grid item xs>
-                <h4><MathJax>{"$x_t$"}</MathJax></h4>
-                <img src={imgs.progress_img} alt="test image"></img>
+                <h4 className="has-text-centered"><MathJax>{"$x_t$"}</MathJax></h4>
+                <img src={imgs.progress_img} alt="test image" width={256} height={256}></img>
             </Grid>
             <Grid item xs>
-                <h4><MathJax>{"$\\hat{x}_0$"}</MathJax></h4>
-                <img src={imgs.progress_x0} alt="test image"></img>
+                <h4 className="has-text-centered"><MathJax>{"$\\hat{x}_0$"}</MathJax></h4>
+                <img src={imgs.progress_x0} alt="test image" width={256} height={256}></img>
             </Grid>
             <Grid item xs>
-                <h4>Label</h4>
-                <img src={label_img} alt='label image'></img>
+                <h4 className="has-text-centered">Label</h4>
+                <img src={label_img} alt='label image' width={256} height={256}></img>
             </Grid>
         </Grid>
         <div className="container column">
@@ -60,7 +60,7 @@ function ProgressImage (task) {
                     <AiOutlineClockCircle />
                 </Grid>
                 <Grid item xs>
-                    <Slider step={5} onChange={setImgs(getImagePath(5, task))}/>
+                    <Slider step={5} onChange={(e) => {setImgs(getImagePath(e.target.value, task))}}/>
                 </Grid>
             </Grid>
         </div>
@@ -71,73 +71,16 @@ function ProgressImage (task) {
 
 export default class Section5 extends Component{
 
-    state = {imgs: [getImagePath(0, "motion_deblur"), 
-                    getImagePath(0, "super_resolution")]};
-
-    ProgressImages = (props) => (
-    <div className="generate-progress">
-                    
-        <Grid container spacing={2}>
-            <Grid item xs>
-                <h4>Measurement</h4>
-                <img src={props.input} alt="input image" width={256} height={256}></img>
-            </Grid>
-            <Grid item xs>
-                <h4><MathJax>{"$x_t$"}</MathJax></h4>
-                <img src={props.progress_img} alt="test image"></img>
-            </Grid>
-            <Grid item xs>
-                <h4><MathJax>{"$\\hat{x}_0$"}</MathJax></h4>
-                <img src={props.progress_x0} alt="test image"></img>
-            </Grid>
-            <Grid item xs>
-                <h4>Label</h4>
-                <img src={props.label} alt='label image'></img>
-            </Grid>
-        </Grid>
-        <div className="container column">
-            <Grid container spacing={2} alignItems="center">
-                <Grid item >
-                    <AiOutlineClockCircle />
-                </Grid>
-                <Grid item xs>
-                    <Slider step={5} onChange={this.OnChangeSlider}/>
-                </Grid>
-            </Grid>
-        </div>
-    </div>
-)
-    OnChangeSlider = (e) => {
-        this.setState({
-            imgs: [getImagePath(e.target.value, "motion_deblur"),
-                   getImagePath(e.target.value, "super_resolution")]
-        })
-    };
-
     render(){
-        const inputs = [
-            process.env.PUBLIC_URL + '/imgs/progress/motion_deblur/input/input.png',
-            process.env.PUBLIC_URL + '/imgs/progress/super_resolution/input/input.png'
-        ];
-        const labels = [
-            process.env.PUBLIC_URL + '/imgs/progress/motion_deblur/label/label.png',
-            process.env.PUBLIC_URL + '/imgs/progress/super_resolution/label/label.png'
-        ];
-
-        const imgs = this.state.imgs;
         return (
             <section className="section">
                 <div className="container">
-                    <h2 className="title is-2">Solve Inverse Problem with Poisson Noise</h2>
-                    {/* {ProgressImage('motion_deblur')} */}
-                    {this.ProgressImages({"input": inputs[0], 
-                                          "progress_img": imgs[0].progress_img,
-                                          "progress_x0": imgs[0].progress_x0,
-                                          "label": labels[0]})}
-                    {this.ProgressImages({"input": inputs[1], 
-                                          "progress_img": imgs[1].progress_img,
-                                          "progress_x0": imgs[1].progress_x0,
-                                          "label": labels[1]})}
+                    <h2 className="title is-2">Inverse Problem with Poisson Noise</h2>
+                    {/* <MathJax> */}
+                        {/* We display intermediate samples {"$x_t$"} and estimated {"$x_0$"} at time step {"$t$"} for motion deblurring and super-resolution task with the Poisson noise. */}
+                    {/* </MathJax> */}
+                    <ProgressImage task='motion_deblur'/>
+                    <ProgressImage task='super_resolution'/>
                 </div>
             </section>
         )
