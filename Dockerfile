@@ -14,4 +14,4 @@ RUN npm install react-responsive-carousel
 RUN npm install better-react-mathjax
 
 COPY . /usr/src/app
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
