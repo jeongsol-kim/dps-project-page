@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/diffusion_posterior-sampling-page/static/css/main.f609065a.css",
-    "main.js": "/diffusion_posterior-sampling-page/static/js/main.75ceafaa.js",
-    "static/js/787.d44239ce.chunk.js": "/diffusion_posterior-sampling-page/static/js/787.d44239ce.chunk.js",
-    "index.html": "/diffusion_posterior-sampling-page/index.html",
-    "main.f609065a.css.map": "/diffusion_posterior-sampling-page/static/css/main.f609065a.css.map",
-    "main.75ceafaa.js.map": "/diffusion_posterior-sampling-page/static/js/main.75ceafaa.js.map",
-    "787.d44239ce.chunk.js.map": "/diffusion_posterior-sampling-page/static/js/787.d44239ce.chunk.js.map"
+    "main.css": "/dps-project-page/static/css/main.f609065a.css",
+    "main.js": "/dps-project-page/static/js/main.d125d631.js",
+    "static/js/787.d44239ce.chunk.js": "/dps-project-page/static/js/787.d44239ce.chunk.js",
+    "index.html": "/dps-project-page/index.html",
+    "main.f609065a.css.map": "/dps-project-page/static/css/main.f609065a.css.map",
+    "main.d125d631.js.map": "/dps-project-page/static/js/main.d125d631.js.map",
+    "787.d44239ce.chunk.js.map": "/dps-project-page/static/js/787.d44239ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f609065a.css",
-    "static/js/main.75ceafaa.js"
+    "static/js/main.d125d631.js"
   ]
 }
